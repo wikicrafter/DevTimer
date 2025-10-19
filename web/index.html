@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>DevTimer – Productivity + AI Coach</title>
+    <style>
+      html, body, #root { height: 100%; }
+      body { margin: 0; background: linear-gradient(135deg,#0f172a,#0b1020,#0b1140); font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica Neue, Arial; color: #fff; }
+      
+      /* Utility styles */
+      .card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);backdrop-filter: blur(8px);border-radius:20px;padding:24px;}
+      .btn{border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:10px 14px;background:rgba(255,255,255,.06);color:#fff;cursor:pointer;transition:all 0.2s ease}
+      .btn:hover{background:rgba(255,255,255,.12);transform:translateY(-1px)}
+      .btn:active{transform:translateY(0)}
+      .btn:disabled{opacity:0.5;cursor:not-allowed;transform:none}
+      .btn-primary{background:rgba(99,102,241,.25);border-color:rgba(129,140,248,.35)}
+      .btn-primary:hover{background:rgba(99,102,241,.35)}
+      .badge{border:1px solid rgba(255,255,255,.18);border-radius:10px;padding:4px 10px;font-size:12px}
+      .grid{display:grid;gap:24px}
+      @media(min-width:920px){.grid-2{grid-template-columns:1.2fr 1fr}}
+      .input, select{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:#fff;border-radius:12px;padding:8px 12px;transition:border-color 0.2s ease}
+      .input:focus, select:focus{outline:none;border-color:rgba(129,140,248,.5)}
+      .subtle{color:rgba(255,255,255,.7)}
+      .muted{color:rgba(255,255,255,.55)}
+      .ring{position:relative;width:320px;height:320px;border-radius:50%;padding:4px}
+      .ring-inner{position:absolute;inset:8px;background:rgba(15,23,42,.9);border:1px solid rgba(255,255,255,.1);border-radius:50%;display:flex;align-items:center;justify-content:center}
+      .center{display:flex;align-items:center;justify-content:center}
+      .w{max-width:1100px;margin:0 auto;padding:24px}
+      .chip{position:fixed;right:16px;bottom:16px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.08);padding:8px 12px;border-radius:12px}
+      .banner{position:fixed;left:50%;transform:translateX(-50%);bottom:20px}
+      
+      /* Animations */
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      
+      @keyframes slideUp {
+        from { 
+          opacity: 0;
+          transform: translateY(20px) scale(0.95);
+        }
+        to { 
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+      
+      /* Custom scrollbar for settings modal */
+      .card::-webkit-scrollbar {
+        width: 8px;
+      }
+      
+      .card::-webkit-scrollbar-track {
+        background: rgba(255,255,255,0.05);
+        border-radius: 4px;
+      }
+      
+      .card::-webkit-scrollbar-thumb {
+        background: rgba(255,255,255,0.2);
+        border-radius: 4px;
+      }
+      
+      .card::-webkit-scrollbar-thumb:hover {
+        background: rgba(255,255,255,0.3);
+      }
+      
+      /* Select dropdown styling */
+      select {
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='rgba(255,255,255,0.7)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+        padding-right: 36px;
+      }
+      
+      /* Code tag styling */
+      code {
+        font-family: 'Courier New', monospace;
+        font-size: 0.9em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/App.jsx"></script>
+  </body>
+</html>

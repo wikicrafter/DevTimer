@@ -1,0 +1,125 @@
+# ===== OS cruft =====
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Icon?
+Desktop.ini
+
+# ===== Node / package managers =====
+node_modules/
+.pnp.cjs
+.pnp.loader.mjs
+.pnpm-store/
+.bun/
+.npm/
+.yarn/
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# ===== Logs & diagnostics =====
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.pid
+*.seed
+*.pid.lock
+
+# ===== Build outputs / caches =====
+dist/
+build/
+public/build/
+.temp/
+.tmp/
+.cache/
+.eslintcache
+.stylelintcache
+.vite/
+.vite-inspect/
+.rollup.cache/
+.parcel-cache/
+.next/
+out/
+.vercel/
+.netlify/
+functions/*.log
+coverage/
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# ===== Env files (keep examples) =====
+.env
+.env.*
+!.env.example
+server/.env
+server/.env.*
+!server/.env.example
+web/.env
+web/.env.*
+!web/.env.example
+
+# ===== Editors / IDE =====
+.vscode/
+.history/
+.idea/
+*.swp
+*.swo
+*.swn
+*.bak
+
+# ===== Misc generated files =====
+*.local
+*.tmp
+*.temp
+*.orig
+*.rej
+*.out
+*.map
+*.dSYM/
+out.mp3
+
+# ===== Images/build artifacts that sometimes creep in =====
+*.tgz
+*.gz
+*.zip
+
+# ===== Framework-specific (optional) =====
+.svelte-kit/
+.nuxt/
+.angular/
+storybook-static/
+.cypress/
+playwright-report/
+*.playwright
+*.snap
+
+# ===== Docker / containers (optional) =====
+.docker/
+docker-compose.override.yml
+
+# ===== Monorepo / tooling (optional) =====
+packages/*/dist/
+packages/*/build/
+packages/*/.turbo/
+.turbo/
+nx-cache/
+lerna-debug.log
+
+# ===== Prisma / DB (optional) =====
+prisma/*.db
+prisma/*.db-journal
+
+# ===== Mac code signing (rarely needed) =====
+*.mobileprovision
+
+# ===== Keep lockfiles tracked (recommended) =====
+# (Do NOT ignore package-lock.json / yarn.lock / pnpm-lock.yaml)
