@@ -1162,9 +1162,8 @@ SOFTWARE.
 
 ### **Connect**
 
-- 🐙 GitHub: [yourusername/devtimer](https://github.com/yourusername/devtimer)
-- 🐦 Twitter: [@yourhandle](https://twitter.com/yourhandle)
-- 📧 Email: your.email@example.com
+- 🐙 GitHub: [wikicrafter/devtimer](https://github.com/wikicrafter/devtimer)
+
 
 ---
 
