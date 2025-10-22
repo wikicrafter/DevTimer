@@ -1377,10 +1377,10 @@ Total                   879      685       85
 
 ## ⚡ Quick Links
 
-- **Live Demo:** [demo.devtimer.app](https://demo.devtimer.app) _(if deployed)_
-- **GitHub Repository:** [github.com/yourusername/devtimer](https://github.com/yourusername/devtimer)
-- **Video Demo:** [youtube.com/watch?v=...](https://youtube.com/watch?v=...) _(if available)_
-- **Pitch Deck:** [pitch.pdf](./pitch.pdf) _(if available)_
+
+- **GitHub Repository:** [github.com/wikicrafter/DevTimer](https://github.com/wikicrafter/DevTimer)
+
+
 
 ---
 
@@ -1434,7 +1434,7 @@ Clean, well-structured code:
 
 Thank you for checking out DevTimer! Whether you're a judge evaluating this project, a developer exploring the code, or a user trying to improve your productivity—we appreciate your time.
 
-**Built with ❤️ and ☕ by [Your Name]**
+**Built with ❤️ and ☕ by Giga **
 
 ---
 
